@@ -20,9 +20,20 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person Isaac = new Person("Isaac Ramirez");
-        Isaac.sayHello();
-        Isaac.setName("Israel Ramirez");
-        System.out.println(Isaac.getName());
+//        Person Isaac = new Person("Isaac Ramirez");
+//        Isaac.sayHello();
+//        Isaac.setName("Israel Ramirez");
+//        System.out.println(Isaac.getName());
+        /////////////////////////////////////////
+
+        Person person1 = new Person("Isaac");
+        Person person2 = new Person("Isaac");
+        System.out.println(person1.getName().equals(person2.getName())); //True
+        System.out.println(person1 == person2); //False
+        System.out.println(person1);
+        System.out.println(person2);
+
+        ////////////////////////////////////////
+
     }
 }
