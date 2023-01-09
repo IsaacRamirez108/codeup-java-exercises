@@ -26,14 +26,20 @@ public class Person {
 //        System.out.println(Isaac.getName());
         /////////////////////////////////////////
 
-        Person person1 = new Person("Isaac");
-        Person person2 = new Person("Isaac");
-        System.out.println(person1.getName().equals(person2.getName())); //True
-        System.out.println(person1 == person2); //False
-        System.out.println(person1);
-        System.out.println(person2);
+//        Person person1 = new Person("Isaac");
+//        Person person2 = new Person("Isaac");
+//        System.out.println(person1.getName().equals(person2.getName())); //True
+//        System.out.println(person1 == person2); //False
+//        System.out.println(person1);
+//        System.out.println(person2);
 
         ////////////////////////////////////////
-
+        Person person1 = new Person("Isaac");
+        Person person2 = person1;
+        System.out.println(person1.getName()); // Isaac
+        System.out.println(person2.getName()); // Isaac
+        person2.setName("John");
+        System.out.println(person1.getName()); // John
+        System.out.println(person2.getName()); // John
     }
 }
