@@ -43,3 +43,29 @@ public class Person {
         System.out.println(person2.getName()); // John
     }
 }
+
+
+// Class input
+//package util;
+//
+//import java.util.Scanner;
+//
+//public class Input{
+//    private final Scanner scanner;
+//}
+//
+//public Input{
+//    scanner = new.Scanner(system.in);
+//}
+//
+//public String getString(){
+//    System.out.println("Please input a string");
+//    return scanner.nextLine();
+//}
+//    public static void main(String[] args) {
+//        Input in = new Input();
+//        String userString = in.getString();
+//        System.out.printf("User Input %s%n", userString);
+//    }
+
+
