@@ -1,6 +1,28 @@
 package shapes;
 
-public class Rectangle {
+public class Rectangle extends Quadrilateral implements Shape{
+
+
+    public Rectangle(double length, double width){
+       super(length, width);
+    }
+        public double getArea(){
+        //return
+    }
+
+    public double getPerimeter(){
+        return 2 * (this.length + this.width);
+    }
+
+    public void setLength(double length){
+
+    }
+
+    public void setWidth(double width){
+
+    }
+
+
 //    protected double length;
 //    protected double width;
 //
@@ -26,5 +48,7 @@ public class Rectangle {
 //        System.out.println("rectangle.getPerimeter() = " + rectangle.getPerimeter());
 //
 //    }
+
+
 
 }
