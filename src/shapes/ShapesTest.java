@@ -14,14 +14,17 @@ public class ShapesTest {
 //        System.out.println("rectangle.getArea() = " + box2.getArea());
 //        System.out.println("rectangle.getPerimeter() = " + box2.getPerimeter());
 
-        Measurable myShape = new Rectangle(4,5);
 
-        System.out.println("rectangle.getArea() = " + myShape.getArea());
-        System.out.println("rectangle.getPerimeter() = " + myShape.getPerimeter());
+        // Exercise 2
 
-        myShape = new Square(5);
+        Measurable myShape = new Rectangle(4, 5);
 
-        System.out.println("rectangle.getArea() = " + myShape.getArea());
-        System.out.println("rectangle.getPerimeter() = " + myShape.getPerimeter());
+        System.out.println("myShape.getPerimeter() = " + myShape.getPerimeter());
+        System.out.println("myShape.getArea() = " + myShape.getArea());
+
+//        myShape = new Square(5);
+
+        System.out.println("myShape.getPerimeter() = " + myShape.getPerimeter());
+        System.out.println("myShape.getArea() = " + myShape.getArea());
     }
 }

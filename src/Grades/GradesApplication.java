@@ -1,6 +1,7 @@
 package Grades;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class GradesApplication {
     public static void main(String[] args) {
@@ -21,11 +22,29 @@ public class GradesApplication {
         Albert.addGrade(100);
         Albert.addGrade(88);
         Albert.addGrade(95);
-        System.out.println(Isaac.getGradeAverage());
-        System.out.println(Abigial.getGradeAverage());
-        System.out.println(Israel.getGradeAverage());
-        System.out.println(Albert.getGradeAverage());
+//        System.out.println(Isaac.getGradeAverage());
+//        System.out.println(Abigial.getGradeAverage());
+//        System.out.println(Israel.getGradeAverage());
+//        System.out.println(Albert.getGradeAverage());
 
+        // Fake Github usernames
+        students.put("Iramirez108", Isaac);
+        students.put("abby1995", Abigial);
+        students.put("Izzyfades", Israel);
+        students.put("Reaper1014", Albert);
+
+        Input in = new Input();
+        System.out.println("Hello, and welcome to CGA-CLI!\nHere is the list of available students:");
+        String usernameList = "";
+        for(HashMap.Entry<String, Student> student: students.entrySet()){
+            usernameList += "|" + student.getKey() + "| ";
+        }
+        System.out.println(usernameList);
+        System.out.println("Which student would you like information about?");
+        String studentUN = in.getString();
+        if (students.containsKey(studentUN)){
+            System.out.println("Student Name: \"%s\";%nStudent Github Username: \"%s\";%nStudent Grade Average: %.2f;%n",);
+        }
 
     }
 }
